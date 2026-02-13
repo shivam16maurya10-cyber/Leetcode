@@ -8,7 +8,7 @@ public:
             
             for(int j = 0; j < nums2.size(); j++) {
                 if(element == nums2[j]) {
-                    // Check if element already exists in answer to avoid duplicates
+                    
                     bool alreadyExists = false;
                     for(int k = 0; k < ans.size(); k++) {
                         if(ans[k] == element) {
@@ -20,7 +20,7 @@ public:
                     if(!alreadyExists) {
                         ans.push_back(element);
                     }
-                    break; // Found match, no need to continue inner loop
+                    break; 
                 }
             }
         }
